@@ -1,0 +1,207 @@
+@import url(_variaveis.css);
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background: var(--azul-escuro);
+    color: var(--branco);
+    font-family: var(--familia-corpo);
+    font-size: 20px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+input {
+    color: var(--preto);
+    padding: 10px;
+    text-align: center;
+}
+
+form label, form legend {
+    margin-right: 4px;
+}
+
+input:read-only {
+    background: var(--cinza);
+}
+
+.titulo {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.lista {
+    padding: 10px;
+    width: 100%;
+}
+
+.lista__item {
+    display: flex;
+    justify-content: center;
+}
+
+.form__label {
+    display: flex;
+    justify-content: center;
+}
+
+.form__consulta {
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    height: 30px;
+    margin: 10px auto;
+    width: 60%;
+}
+
+.form__consulta:focus {
+    outline: 1px solid var(--branco);
+}
+
+.form__resultado {
+    border: 1px solid var(--preto);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 35px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.di__consulta {
+    align-items: center;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+        "consulta__blocoA"
+        "consulta__blocoB"
+        "consulta__blocoC";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 50px;
+    margin: 10px;
+}
+
+.consulta__form-a {
+    align-items: center;
+    display: flex;
+    grid-area: consulta__blocoA;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    justify-content: center;
+}
+
+.consulta__form-b {
+    align-items: center;
+    display: flex;
+    grid-area: consulta__blocoB;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    justify-content: center;
+}
+
+.consulta__form-c {
+    display: flex;
+    grid-area: consulta__blocoC;
+    grid-column: span 2;
+    grid-row: 2 / 2;
+    justify-content: center;
+    padding: 15px;
+}
+
+.di__resultado {
+    align-items: center;
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+        "retorno__blocoA"
+        "retorno__blocoB"
+        "retorno__blocoC"
+        "retorno__blocoD"
+        "retorno__blocoE";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    padding: 50px;
+    margin: 10px;
+}
+
+.bloco__form-a {
+    display: flex;
+    grid-area: retorno__blocoA;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    justify-content: center;
+}
+
+.bloco__form-b {
+    display: flex;
+    grid-area: retorno__blocoB;
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    justify-content: center;
+}
+
+.bloco__form-c {
+    display: flex;
+    grid-area: retorno__blocoC;
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    justify-content: center;
+}
+
+.bloco__form-d {
+    display: flex;
+    grid-area: retorno__blocoD;
+    grid-column: 2 / 2;
+    grid-row: 3 / 4;
+    justify-content: center;
+}
+
+.bloco__form-e {
+    display: flex;
+    grid-area: retorno__blocoE;
+    grid-column: span 3;
+    grid-row: 5 / 5;
+    justify-content: center;
+    padding: 15px;
+}
+
+.botao {
+    background: var(--amarelo);
+    border: 0;
+    border-radius: 10px;
+    color: var(--azul-escuro);
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+}
+
+.botao:active {
+    background: var(--azul-escuro);
+    border: 1px solid var(--branco);
+    color: var(--branco);
+}
+
+/* Classe criada para validação de formulários de preenchimento obrigatório */
+
+.form__alerta {
+    background: var(--vermelho-claro);
+    border: 1px solid var(--branco);
+    outline: 2px solid var(--vermelho);
+}
