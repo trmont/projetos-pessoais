@@ -1,0 +1,46 @@
+.sidenav {
+    grid-area: menu;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    width: 30%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cinza-escuro);
+    overflow-x: hidden;
+    }
+    
+.sidenav a, .dropdown-btn {
+    padding: .7rem .7rem;
+    text-decoration: none;
+    font-size: 20px;
+    color:   var(--cinza-claro);
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: var(--branco);
+}
+
+.active {
+    background-color:  var(--vermelho);
+    color: var(--branco);
+}
+
+.dropdown-container {
+    display: none;
+    background-color: var(--cinza-medio);
+    width: 101%;
+    padding-left: .7rem;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: .7rem;
+    }

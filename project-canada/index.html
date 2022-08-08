@@ -1,0 +1,70 @@
+<!-- Arrumar e organizar toda a arquitetura do site, como por exemplo dividir as imagens, scripts e CSSs em pastas -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="device-width=device-width">
+		<title>Projeto Calgary & Banff</title>
+        <link rel="icon" href="assets/img/maple_leaf_icon.png" type="image/png">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/menu.css">
+        <link rel="stylesheet" href="assets/css/conteudo.css">
+        <link rel="stylesheet" href="assets/css/rodape.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header__banner"></header>
+        <main class="main__container">
+              <nav class="sidenav">
+                  <a href="#about">Início</a>
+                  <a href="#services">A viagem</a>
+                  <a href="#clients">Como chegar?</a>
+                  <a href="#contact">Transporte</a>
+                  <button class="dropdown-btn">Calgary
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="#">O que fazer?</a>
+                    <a href="#">Onde comer?</a>
+                    <a href="#">Compras</a>
+                    </div> 
+                    <button class="dropdown-btn">Banff
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                      <a href="#">O que fazer?</a>
+                      <a href="#">Onde comer?</a>
+                  </div>
+                  <a href="#contact">Custos</a>
+                </nav>
+            <section class="conteudo">
+              <article class="conteudo__texto">
+                <p>Foi passeando pelo Tumblr que eu me deparei com Banff pela primeira vez. É impossível não ver qualquer imagem desse lugar e não se surpreender, então fui pesquisando até descobrir onde era aquele lugar fantástico. Desde então o destino se transformou no primeiro lugar na minha lista de desejos de viagens pelo mundo. Com lagos de degelo de um azul incrível e surreal, paisagens cercadas de montanhas e florestas, o Parque Nacional de Banff na província de Alberta, Canadá, não só é um dos destinos mais desejados do mundo, mas é extremamente popular na internet, e por uma boa razão. Basta ver qualquer foto ou vídeo dos turistas que você perde o fôlego com a beleza do lugar.</p>
+
+                <p>Os anos foram passando e essa viagem sempre ficava na minha cabeça. Até que um dia, daqueles que você não tem muita coisa pra fazer, eu comecei a pesquisar o que era necessário para fazer essa viagem. Depois de olhar alguns custos aproximados percebi que com um pouco de tempo e organização essa viagem era mais do que possível! A decisão estava tomada!</p>
+
+                <p>Decidi então reunir todas as informações neste site. A ideia surgiu da minha necessidade de organizar as informações em um lugar que eu pudesse acessar facilmente e também praticar tudo que eu estava aprendendo sobre desenvolvimento front end, além de criar um portifólio profissional para mim. Sendo assim foi muito fácil unir o útil ao agradável!</p>
+
+                <p>Este site vai ser construído aos poucos e vou adicionando as páginas com as informações que eu reunir à medida que for planejando esta viagem. Também pretendo atualiza-lo sempre que eu tiver uma ideia melhor para praticar os conhecimentos ou aprender algo novo que eu possa utilizar aqui. Então vamos nessa! Perseguir o desenvolvimento profissional para ter dinheiro para fazer a viagem dos sonhos!</p>
+              </article>
+            </section>
+        </main>
+        <footer>
+          <!-- Testar envolver cada link + copyright em um container próprio -->
+          <div class="socialmediabar">
+              <a href="https://www.linkedin.com/in/thiago-r-montagnolli-21a5aa37/"><img src="assets/img/logo_linkedin.png" class="socialmediabar__img"></a>
+              <a href="https://github.com/trmont"><img src="assets/img/logo_github.png" class="socialmediabar__img"></a>
+              <a href="https://www.instagram.com/instab0de"><img src="assets/img/logo_insta.png" class="socialmediabar__img"></a>
+          </div>
+          <div class="copyright">
+            &copy; Thiago R. Montagnolli, 2021
+          </div>
+        </footer>
+        <script src="assets/js/menu.js"></script>
+    </body>
+</html>

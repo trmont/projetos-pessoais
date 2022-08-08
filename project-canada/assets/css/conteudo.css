@@ -1,0 +1,22 @@
+.conteudo {
+    margin-left: 1rem;
+}
+
+.conteudo__texto p {
+    line-height: 1.3rem;
+    margin: .9rem 0 .9rem;
+}
+
+.conteudo__texto p:first-child {
+    margin-top: 0;
+}
+
+.conteudo__texto p:last-child {
+    margin-bottom: 0;
+}
+
+.conteudo__texto a {
+    color: var(--vermelho);
+    font-weight: bolder;
+    text-decoration: none;
+}

@@ -1,0 +1,21 @@
+@import url(_variaveis.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background:  var(--branco);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header__banner {
+    background: url('../img/banner.png') no-repeat center / cover;
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 1.3rem;
+}
+
+.main__container {
+  display: flex;
+}
