@@ -12,8 +12,8 @@ body {
 .header__banner {
     background: url('../img/banner.png') no-repeat center / cover;
     height: 60vh;
-    width: 100%;
     margin-bottom: 1.3rem;
+    width: 100%;
 }
 
 .main__container {

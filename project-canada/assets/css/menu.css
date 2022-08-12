@@ -1,27 +1,27 @@
 .sidenav {
+    background-color: var(--cinza-escuro);
     grid-area: menu;
     grid-column: 2 / 2;
     grid-row: 2 / 2;
+    left: 0;
+    overflow-x: hidden;
+    top: 0;
     width: 30%;
     z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--cinza-escuro);
-    overflow-x: hidden;
     }
     
 .sidenav a, .dropdown-btn {
-    padding: .7rem .7rem;
-    text-decoration: none;
-    font-size: 20px;
-    color:   var(--cinza-claro);
-    display: block;
     border: none;
     background: none;
-    width:100%;
-    text-align: left;
+    color:   var(--cinza-claro);
     cursor: pointer;
+    display: block;
+    font-size: 20px;
     outline: none;
+    padding: .7rem .7rem;
+    text-decoration: none;
+    text-align: left;
+    width:100%;
 }
 
 .sidenav a:hover, .dropdown-btn:hover {
@@ -34,10 +34,10 @@
 }
 
 .dropdown-container {
-    display: none;
     background-color: var(--cinza-medio);
-    width: 101%;
+    display: none;
     padding-left: .7rem;
+    width: 101%;
 }
 
 .fa-caret-down {
